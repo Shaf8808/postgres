@@ -96,10 +96,17 @@ shadman_khan = Programmer(
 # session.add(margaret_hamilton)
 # session.add(bill_gates)
 # session.add(tim_berners_lee)
-session.add(shadman_khan)
+# session.add(shadman_khan)
+
+
+# updating a single record
+# programmer = session.query(Programmer).filter_by(id=7).first()
+# programmer.famous_for = "Rocket scientist"
+
 
 # commit our session to the database
-session.commit()
+# session.commit()
+
 
 # query the database to find all Programmers
 programmers = session.query(Programmer)
