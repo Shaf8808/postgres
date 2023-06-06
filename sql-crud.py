@@ -137,7 +137,8 @@ shadman_khan = Programmer(
 #     print("No records found")
 
 
-# query the database to find all Programmers
+# Query the database to find all Programmers and structure the way
+# the data is displayed in the terminal
 programmers = session.query(Programmer)
 for programmer in programmers:
     print(
